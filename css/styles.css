@@ -902,6 +902,7 @@ textarea {
 
 .logo {
     font-size: 24px;
+    padding-right: 276px;
 }
 
 .first-line, .first-line-contactinfo {
@@ -910,6 +911,31 @@ textarea {
 
 .menu-item-mobile {
     display: flex;
-    
+    background-color: transparent;
+    border: none;
+}
+
+.menu-item-mobile:hover,
+.menu-item-mobile:focus  {
+    cursor: pointer;
+    color: var(--brand-color-logo);
+}
+
+.first-section-background {
+}
+
+.fist-section-title {
+    font-size: 26px;
+    letter-spacing: 1.56px;
+}
+
+.second-section {
+    flex-direction: column;
+    text-align: center;
+}
+
+.second-section-hd-item {
+    font-size: 14px;
+    letter-spacing: 0.42px;
 }
 }
