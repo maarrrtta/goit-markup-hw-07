@@ -54,22 +54,23 @@
 
       <div class="first-line-contactinfo">
         <a href="mailto:info@devstudio.com">
-          <svg class="icon-nav" width="16px" height="12px">
+          <svg class="icon-nav icon-nav-mail">
             <use href="./images/icons.svg#icon-envelope"></use>
           </svg>
           info@devstudio.com</a
         >
 
-        <a href="tel:+48111111111">
-          <svg class="icon-nav" width="10px" height="16px">
+        <a class="telephone" href="tel:+48111111111">
+          <svg class="icon-nav icon-nav-tel">
             <use href="./images/icons.svg#icon-phone"></use>
           </svg>
           +48 111 111 111</a
         >
         </div>
 
+        <div>
         <button class="menu-item-mobile">
-        <svg width="40px" height="40px">
+        <svg class="hamburger-icon" width="40px" height="40px">
          <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
       </button>
@@ -94,7 +95,7 @@
         <div class="container">
           <ul class="second-section">
             <li class="second-section-headline">
-              <svg class="icon-second-section" width="270px" height="120px">
+              <svg class="icon-second-section">
                 <use href="./images/icons.svg#icon-antenna"></use>
               </svg>
               <p class="second-section-hd-item">LOREM IPSUM</p>
@@ -105,7 +106,7 @@
             </li>
 
             <li class="second-section-headline">
-              <svg class="icon-second-section" width="270px" height="120px">
+              <svg class="icon-second-section">
                 <use href="./images/icons.svg#icon-clock"></use>
               </svg>
               <p class="second-section-hd-item">LOREM IPSUM</p>
@@ -116,7 +117,7 @@
             </li>
 
             <li class="second-section-headline">
-              <svg class="icon-second-section" width="270px" height="120px">
+              <svg class="icon-second-section">
                 <use href="./images/icons.svg#icon-diagram"></use>
               </svg>
               <p class="second-section-hd-item">LOREM IPSUM</p>
@@ -127,7 +128,7 @@
             </li>
 
             <li class="second-section-headline">
-              <svg class="icon-second-section" width="270px" height="120px">
+              <svg class="icon-second-section">
                 <use href="./images/icons.svg#icon-astronaut"></use>
               </svg>
               <p class="second-section-hd-item">LOREM IPSUM</p>
@@ -140,7 +141,7 @@
         </div>
       </section>
 
-      <div>
+      <div class="third-section">
         <h2 class="third-section-title">Czym się zajmujemy</h2>
         <ul class="container third-section-pictures">
           <li>
@@ -184,8 +185,6 @@
               class="fourth-section-photo"
               src="./images/pic4.jpg"
               alt="man"
-              width="270"
-              height="260"
             />
             <figcaption class="fourth-section-name">
               John Doe
@@ -220,8 +219,6 @@
               class="fourth-section-photo"
               src="./images/pic5.jpg"
               alt="man"
-              width="270"
-              height="260"
             />
             <figcaption class="fourth-section-name">
               John Doe
@@ -256,8 +253,6 @@
               class="fourth-section-photo"
               src="./images/pic6.jpg"
               alt="man"
-              width="270"
-              height="260"
             />
             <figcaption class="fourth-section-name">
               John Doe
@@ -292,8 +287,6 @@
               class="fourth-section-photo"
               src="./images/pic7.jpg"
               alt="man"
-              width="270"
-              height="260"
             />
             <figcaption class="fourth-section-name">
               John Doe
@@ -330,22 +323,22 @@
           <h2 class="fifth-section-headline">Nasi klienci</h2>
 
           <div class="clients-icons">
-            <svg class="clients-icons-blue" width="170" height="92">
+            <svg class="clients-icons-blue">
               <use href="./images/icons.svg#icon-Logo-1"></use>
             </svg>
-            <svg class="clients-icons-blue" width="170" height="92">
+            <svg class="clients-icons-blue">
               <use href="./images/icons.svg#icon-Logo-2"></use>
             </svg>
-            <svg class="clients-icons-blue" width="170" height="92">
+            <svg class="clients-icons-blue">
               <use href="./images/icons.svg#icon-Logo-3"></use>
             </svg>
-            <svg class="clients-icons-blue" width="170" height="92">
+            <svg class="clients-icons-blue">
               <use href="./images/icons.svg#icon-Logo-4"></use>
             </svg>
-            <svg class="clients-icons-blue" width="170" height="92">
+            <svg class="clients-icons-blue">
               <use href="./images/icons.svg#icon-Logo-5"></use>
             </svg>
-            <svg class="clients-icons-blue" width="170" height="92">
+            <svg class="clients-icons-blue">
               <use href="./images/icons.svg#icon-Logo-6"></use>
             </svg>
           </div>
@@ -373,7 +366,7 @@
           </address>
         </div>
 
-        <div>
+        <div class="sm-section">
           <p class="sm-footer">DOŁĄCZ DO NAS</p>
           <div class="footer-icons">
             <a class="footer-sm-icon"
@@ -404,7 +397,7 @@
                 <input class="email-frame-footer" type="email" name="newsletter" placeholder="E-mail" />
               </label>
               <button class="submit-button-footer" type="submit"> <div class="sign-in-footer">Zapisz się </div> 
-                <svg class="svg-email-footer" width="24" height="24">
+                <svg class="svg-email-footer">
                 <use href="./images/icons.svg#icon-email-footer"></use></svg>
               </button>
               </div>
@@ -473,5 +466,12 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+
+    <div class="backdrop is-hidden" data-modal>
+
+    </div>
+<script src="./js/mobile-menu.js"></script>
+
   </body>
 </html>
