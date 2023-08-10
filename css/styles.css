@@ -77,18 +77,17 @@ a {
     top: 10px;
 }
 
-.hamburger-icon:hover,
-.hamburger-icon:focus {
-    cursor: pointer;
-    color: var(--brand-color-logo);
+.hamburger-icon:active {
+    fill: var(--brand-color-logo);
+    background-color: transparent;
 }
 
 .first-section-background {
-    background: linear-gradient(var(--background-photo), var(--background-photo)), url('../images/index-background.jpg');
+    background: linear-gradient(var(--background-photo), var(--background-photo)), url('../images/index-background-mobile.jpg'), url('../images/index-background-mobile@2x.jpg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    background-size: 480px 400px;
 }
 
 .first-section-settings {
@@ -161,7 +160,7 @@ a {
     background: var(--background-icons-second-section);
     border-radius: 4px;
     padding: 25px 0;
-    width: 450px;
+    width: 100%;
     height: 120px;
     margin: 0 15px;
 }
@@ -215,9 +214,8 @@ a {
     margin-bottom: 60px;
 }
 
-.fourth-section-block img {
-    width: 450px;
-    height: 460px;
+.fourth-section-photo {
+    max-width: 100%;
 }
 
 figcaption {
@@ -562,8 +560,7 @@ height: 24px;
 }
 
 .photo-box img {
-    width: 450px;
-    height: 294px;
+    max-width: 100%;
 }
 
 .text-overlay {
@@ -633,6 +630,11 @@ height: 24px;
     background: none;
     box-shadow: none;
     cursor: pointer;
+} 
+
+.close svg {
+    width: 18px;
+    height: 18px;
 }
 
 .x-icon {
@@ -762,4 +764,96 @@ textarea {
     cursor: pointer;
     border-color: none;
     border: none;
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--brand-color);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.16), 0px 2px 4px 0px rgba(0, 0, 0, 0.08), 0px 4px 8px 0px rgba(0, 0, 0, 0.04);
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-toggle svg {
+    width: 40px;
+    height: 40px;
+    fill: var(--brand-color-headline);
+    position: fixed;
+    top: 10px;
+    right: 15px;
+}
+
+.menu-toggle svg:active {
+    fill: var(--brand-color-logo);
+}
+
+.mobile-menu {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        margin: 48px 0 0 40px;
+}
+
+.mobile-menu li {
+    padding-bottom: 32px;
+    text-decoration: none;
+        color: var(--brand-color-headline);
+}
+
+.menu-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-number {
+    text-decoration: none;
+    color: var(--brand-color-logo);
+    font-size: 34px;
+        font-weight: 500;
+        letter-spacing: 0.68px;
+        padding-top: 270px;
+        padding-bottom: 32px;
+        margin-left: 40px;
+}
+
+.menu-email {
+    text-decoration: none;
+    color: var(--brand-color-description);
+        font-size: 24px;
+        font-weight: 500;
+        letter-spacing: 0.48px;
+        margin-left: 40px;
+        padding-bottom: 64px;
+}
+
+.menu-social-media {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 48px;
+}
+
+.menu-sm {
+    color: var(--brand-color-logo);
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.36px;
+}
+
+.menu-line {
+    width: 1px;
+        height: 22px;
+        color: rgba(33, 33, 33, 0.20);
 }
