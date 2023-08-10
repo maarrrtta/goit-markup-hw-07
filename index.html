@@ -69,7 +69,9 @@
         </div>
 
         <div>
-        <button class="menu-item-mobile">
+        <button class="menu-item-mobile js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
         <svg class="hamburger-icon" width="40px" height="40px">
          <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -183,7 +185,8 @@
           <figure class="fourth-section-block">
             <img
               class="fourth-section-photo"
-              src="./images/pic4.jpg"
+              src="./images/pic4-mobile.jpg"
+              srcset="./images/pic4-mobile@2x.jpg"
               alt="man"
             />
             <figcaption class="fourth-section-name">
@@ -217,7 +220,8 @@
           <figure class="fourth-section-block">
             <img
               class="fourth-section-photo"
-              src="./images/pic5.jpg"
+              src="./images/pic5-mobile.jpg"
+              srcset="./images/pic5-mobile@2x.jpg"
               alt="man"
             />
             <figcaption class="fourth-section-name">
@@ -251,7 +255,8 @@
           <figure class="fourth-section-block">
             <img
               class="fourth-section-photo"
-              src="./images/pic6.jpg"
+              src="./images/pic6-mobile.jpg"
+              srcset="./images/pic6-mobile@2x.jpg"
               alt="man"
             />
             <figcaption class="fourth-section-name">
@@ -285,7 +290,8 @@
           <figure class="fourth-section-block">
             <img
               class="fourth-section-photo"
-              src="./images/pic7.jpg"
+              src="./images/pic7-mobile.jpg"
+              srcset="./images/pic7-mobile@2x.jpg"
               alt="man"
             />
             <figcaption class="fourth-section-name">
@@ -408,7 +414,7 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close" data-modal-close>
-          <svg width="11" height="11">
+          <svg>
             <use class="x-icon" href="./images/icons.svg#icon-x-icon"></use>
           </svg>
         </button>
@@ -468,10 +474,38 @@
     <script src="./js/modal.js"></script>
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg>
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+      </button>
 
-    </div>
-<script src="./js/mobile-menu.js"></script>
+      <ul class="mobile-menu">
+        <li><a href="./index.html" style="color: #2196F3;">Agencja</a></li>
+        <li><a href="./portfolio.html" style="color: #212121;">Portfolio</a></li>
+        <li><a href="" style="color: #212121;">Kontakt</a></li>
+      </ul>
+
+      <div class="menu-contact">
+      <a class="menu-number" href="tel:+48111111111">
+          +48 111 111 111</a>
+          <a class="menu-email" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+          </div>
+
+          <ul class="menu-social-media">
+      <li class="menu-sm"> Instagram </li>
+      <li class="menu-line"> | </li>
+      <li class="menu-sm"> Twitter </li>
+      <li class="menu-line"> | </li>
+      <li class="menu-sm"> Facebook </li>
+      <li class="menu-line"> | </li>
+      <li class="menu-sm"> LinkedIn </li>
+    </ul>
+</div>
+
+    <script defer src="js/mobile-menu.js"></script>
 
   </body>
 </html>

@@ -58,7 +58,9 @@
         </div>
 
         <div>
-        <button class="menu-item-mobile">
+        <button class="menu-item-mobile js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu">
         <svg class="hamburger-icon" width="40px" height="40px">
          <use href="./images/icons.svg#icon-menu"></use>
                 </svg>
@@ -81,7 +83,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/computer.jpg"
+            src="./images/computer-mobile.jpg"
+            srcset="./images/computer-mobile@2x.jpg"
             alt="computer"/>
             <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
             </figure>
@@ -94,7 +97,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/basketball-players.jpg"
+            src="./images/basketball-players-mobile.jpg"
+            srcset="./images/basketball-players-mobile@2x.jpg"
             alt="basketball players"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -110,7 +114,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/seefood-restaurant.jpg"
+            src="./images/seefood-restaurant-mobile.jpg"
+            srcset="./images/seefood-restaurant-mobile@2x.jpg"
             alt="seefood restaurant logo"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -124,7 +129,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/headphones.jpg"
+            src="./images/headphones-mobile.jpg"
+            srcset="./images/headphones-mobile@2x.jpg"
             alt="headphones"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -138,7 +144,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/boxes.jpg"
+            src="./images/boxes-mobile.jpg"
+            srcset="./images/boxes-mobile@2x.jpg"
             alt="two boxes"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -152,7 +159,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/black-screen.jpg"
+            src="./images/black-screen-mobile.jpg"
+            srcset="./images/black-screen-mobile@2x.jpg"
             alt="computer with the black screen"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -166,7 +174,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/magazine.jpg"
+            src="./images/magazine-mobile.jpg"
+            srcset="./images/magazine-mobile@2x.jpg"
             alt="magazine"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -180,7 +189,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/label-tag.jpg"
+            src="./images/label-tag-mobile.jpg"
+            srcset="./images/label-tag-mobile@2x.jpg"
             alt="label tag"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -194,7 +204,8 @@
         <div class="portfolio-box">
           <figure class="photo-box">
           <img
-            src="./images/growing-business-laptop.jpg"
+            src="./images/growing-business-laptop-mobile.jpg"
+            srcset="./images/growing-business-laptop-mobile@2x.jpg"
             alt="laptop"
           />
           <p class="text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
@@ -264,6 +275,40 @@
             </form>
           </div>
     </footer>
+
+    <div class="menu-container js-menu-container">
+      <button class="menu-toggle js-close-menu">
+        <svg>
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a href="./index.html" style="color: #212121;">Agencja</a></li>
+        <li><a href="./portfolio.html" style="color: #2196F3;">Portfolio</a></li>
+        <li><a href="" style="color: #212121;">Kontakt</a></li>
+      </ul>
+
+      <div class="menu-contact">
+      <a class="menu-number" href="tel:+48111111111">
+          +48 111 111 111</a>
+          <a class="menu-email" href="mailto:info@devstudio.com">
+          info@devstudio.com</a>
+          </div>
+
+          <ul class="menu-social-media">
+      <li class="menu-sm"> Instagram </li>
+      <li class="menu-line"> | </li>
+      <li class="menu-sm"> Twitter </li>
+      <li class="menu-line"> | </li>
+      <li class="menu-sm"> Facebook </li>
+      <li class="menu-line"> | </li>
+      <li class="menu-sm"> LinkedIn </li>
+    </ul>
+</div>
+
+    <script defer src="js/mobile-menu.js"></script>
+
   </body>
 </html>
 
