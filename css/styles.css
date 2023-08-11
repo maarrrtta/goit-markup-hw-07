@@ -605,7 +605,7 @@ height: 24px;
 
 .modal {
     position: fixed;
-    width: 100%;
+    width: auto;
     height: auto;
     left: 50%;
     top: 50%;
