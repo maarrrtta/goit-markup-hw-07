@@ -793,6 +793,9 @@ textarea {
     right: 15px;
     background-color: transparent;
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-toggle svg:active {
