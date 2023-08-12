@@ -513,6 +513,7 @@ height: 24px;
 .portfolio-all-photos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: centers;
     gap: 30px;
     margin: 0 15px 60px 15px;
 }
