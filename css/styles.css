@@ -83,7 +83,7 @@ a {
 }
 
 .first-section-background {
-    background: linear-gradient(var(--background-photo), var(--background-photo)), url('../images/index-background-mobile.jpg'), url('../images/index-background-mobile@2x.jpg');
+    background: linear-gradient(var(--background-photo), var(--background-photo)), url('../images/index-background-mobile.jpg');
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -198,6 +198,7 @@ a {
 .fourth-section {
     display: flex;
     flex-direction: column;
+    padding-bottom: 60px;
 }
 
 .fourth-section-block {
@@ -206,10 +207,6 @@ a {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 15px;
-}
-
-.fourth-section-block:last-child {
-    margin-bottom: 60px;
 }
 
 .fourth-section-photo {
@@ -571,7 +568,10 @@ height: 24px;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 49px 45px 49px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
     font-family: 'Roboto';
     font-size: 18px;
     line-height: 28px;
@@ -655,7 +655,6 @@ height: 24px;
     letter-spacing: 0.6px;
     text-align: center;
     padding-bottom: 2px;
-    margin-top: 2vh;
 }
 
 .modal-form-name {
@@ -1020,13 +1019,6 @@ textarea {
             display: none;
         }
 
-     @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        .bfirst-section-background {
-                        background-image: url('../images/index-background-tablet.jpg'), ;
-                    }
-                }
         .first-section-background {
     background: linear-gradient(var(--background-photo), var(--background-photo)), url('../images/index-background-tablet.jpg');
     background-size: 768px auto;
@@ -1419,11 +1411,6 @@ textarea {
         display: inline-block;
     }
 
-    .fourth-section-block:last-child {
-        margin-bottom: 0;
-        
-    }
-
     figcaption {
         line-height: 1.2;
         letter-spacing: 0.03em;
@@ -1454,6 +1441,11 @@ textarea {
         width: 170px;
         height: 92px;
         padding: 16px 32px;
+    }
+
+    .footer-display {
+        display: flex;
+        flex-direction: row;
     }
 
     .footer-flex {
@@ -1576,6 +1568,7 @@ textarea {
 
     .modal-text {
         line-height: normal;
+        margin-top: 40px;
     }
 
     .label-part {
@@ -1620,6 +1613,14 @@ textarea {
 
     .nav-border {
         border: 1px solid #ECECEC;
+    }
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .first-section-background {
+        background-image: url('../images/index-background-mobile@2x.jpg'), url('../images/index-background-tablet@2x.jpg'), url('../images/index-background@2x.jpg');
     }
 }
 
