@@ -1051,6 +1051,84 @@ textarea {
             margin: 0;
         }
 
+        .fourth-section {
+            flex-direction: unset;
+            flex-wrap: wrap;
+            margin-bottom: 45px;
+        }
+
+        .fourth-section-block {
+            width: 354px;
+            height: 100%;
+        }
+
+        .footer-flex {
+            flex-direction: unset;
+            justify-content: unset;
+        }
+
+        .footer-text {
+            margin: 60px 0 0 76px;
+        }
+
+        .sm-section {
+            margin-top: 65px;
+            padding-left: 144px;
+        }
+
+        .footer-newsletter {
+            padding: 0;
+            margin: 247px auto 60px;
+            display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+        }
+
+        .email-display-footer {
+            margin: 0;
+            padding-top: 20px;
+        }
+
+        .email-frame-footer {
+            width: 450px;
+        }
+
+        .portfolio-buttons {
+            margin: 60px auto 0;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        .photo-box img {
+            max-width: 354px;
+            height: 100%;
+        }
+
+        .modal {
+            width: 450px;
+            height: 609px;
+        }
+        
+        .close:active {
+            fill: var(--brand-color-logo);
+        }
+        
+        .modal-display {
+            padding: 40px 40px 12px 40px;
+        }
+        
+        .modal-text {
+            padding-bottom: 0;
+        }
+        
+        .label-part {
+            width: 370px;
+        }
+        
+        .label-part-comment {
+            width: 370px;
+        }
 }
 
 @media (min-width: 1200px) {
