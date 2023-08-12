@@ -655,6 +655,7 @@ height: 24px;
     letter-spacing: 0.6px;
     text-align: center;
     padding-bottom: 2px;
+    margin-top: 2vh;
 }
 
 .modal-form-name {
@@ -866,7 +867,7 @@ textarea {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
     .logo {
         font-size: 24px;
@@ -1019,17 +1020,26 @@ textarea {
             display: none;
         }
 
+     @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .bfirst-section-background {
+                        background-image: url('../images/index-background-tablet.jpg'), ;
+                    }
+                }
         .first-section-background {
     background: linear-gradient(var(--background-photo), var(--background-photo)), url('../images/index-background-tablet.jpg');
     background-size: 768px auto;
     background-repeat: no-repeat;
     height: 400px;
+    background-position: center;
         }
 
         .second-section {
             flex-wrap: wrap;
             flex-direction: unset;
             margin-bottom: 45px;
+            justify-content: center;
         }
 
         .second-section li {
@@ -1055,6 +1065,7 @@ textarea {
             flex-direction: unset;
             flex-wrap: wrap;
             margin-bottom: 45px;
+            justify-content: center;
         }
 
         .fourth-section-block {
@@ -1062,9 +1073,9 @@ textarea {
             height: 100%;
         }
 
-        .footer-flex {
-            flex-direction: unset;
-            justify-content: unset;
+        .footer-display {
+            display: flex;
+            flex-direction: row;
         }
 
         .footer-text {
@@ -1078,7 +1089,8 @@ textarea {
 
         .footer-newsletter {
             padding: 0;
-            margin: 247px auto 60px;
+            margin-bottom: 60px;
+            padding-top: 60px;
             display: flex;
                 flex-direction: column;
                 justify-content: center;
